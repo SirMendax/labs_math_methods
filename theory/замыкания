@@ -1,0 +1,15 @@
+ a = []
+ b = a
+ a.append('asdf')
+ print(b) # ['asdf']
+
+# Пример замыкания
+
+def one():
+    x = ['one', 'two']
+    def inner():
+        print(x)
+        print(id(x))
+    return inner
+
+o = one()

@@ -1,0 +1,28 @@
+jack = {
+    'name':'jack',
+    'car':'bmw'
+}
+
+johnny = {
+    'name':'johnny',
+    'car':'audi'
+}
+
+users = [jack, johnny]
+
+Классический способ выглядит так:
+
+cars = []
+for person in users:
+    cars.append(person['car])
+
+Пайтон предлагает альтернативный вариант:
+
+new_cars = [person.get('car) for person in users]
+
+
+names = ['kity', 'john', 'kirill', 'gilia']
+
+new_names = [n for m in names if n.startswith('j')]
+
+print(new_names)
